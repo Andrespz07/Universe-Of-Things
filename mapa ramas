@@ -1,0 +1,20 @@
+                            MAIN
+                              |
+                              |
+                            DEVELOP
+                              |
+                              |
+                            FEATURE
+                              | 
+    --------------------------|---------------------------
+    |                                                    |
+    |                                                    | 
+ COMPONENTS                                            VIEWS    
+    |                                                    |
+--------------------------------                   --------------------------  
+|               |              |                   |           |            |
+HEADER       FOOTER          CARDS                HOME      CHARACTERS   FAVOURITES
+                               |               
+                           --------------
+                           |            |
+                    CHARACTERS      FAVOURITES    
