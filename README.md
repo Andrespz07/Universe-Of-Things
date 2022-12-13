@@ -32,6 +32,7 @@ HERRAMIENTAS:
 VUE, VITE, SASS, GITHUB, FIGMA, JIRA, DIAGRAMS
 
 PROTOTIPO
-
+https://github.com/Andrespz07/Universe-Of-Things/blob/main/Vue-Universe-of-things/src/assets/Prototipo.PNG
 
 USER FLOW
+https://github.com/Andrespz07/Universe-Of-Things/blob/main/Vue-Universe-of-things/src/assets/User%20flow.png
