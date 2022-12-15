@@ -5,25 +5,55 @@
 <template>
 
   <div class="container">
-   <img src="" alt="">
-  
-   
-   <h2></h2>
-   <button></button>
+   <img src="../assets/Happy Blanca Nieves.PNG" alt="Happy Blanca Nieves">
+   <p>Happy</p>
+   <button><img id="favoritos" src="../assets/pngwing.com.png" alt="favourite button"></button>
    
 
   </div>
-  
-<!--       
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. -->
     
 </template>
 
 <style lang="scss" scoped>
+@import "../../public/sass/styles.scss";
 .container{
-  
-}
+  background-color: $background-color;
+  width: 120px;
+  height: 160px;
+  border-radius: 5%;
 
+  img{
+    width: 120px;
+    height: 90px;
+    border-radius: 5%;
+  }
+  p{
+    font-family: $font-family;
+    color: white;
+    text-align: center;
+  }
+  button{
+    border: none;
+    background-color: none;
+    border-radius: 50% ;
+    width: 20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+
+    #favoritos {
+    border: none;
+    background-color: none;
+    border-radius: 50% ;
+    width: 20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+  
+      
+    
+    }
+  }
+}
 
 </style>

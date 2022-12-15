@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import CardCharacters from '../components/CardCharacters.vue';
+
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <CardCharacters/>
   </main>
 </template>
