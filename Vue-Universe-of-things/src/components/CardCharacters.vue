@@ -6,8 +6,10 @@
 
   <div class="container">
    <img src="" alt="">
+  
    
    <h2></h2>
+   <button></button>
    
 
   </div>
@@ -19,5 +21,9 @@
 </template>
 
 <style lang="scss" scoped>
+.container{
+  
+}
+
 
 </style>
