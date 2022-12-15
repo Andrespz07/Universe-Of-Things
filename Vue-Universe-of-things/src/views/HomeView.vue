@@ -3,7 +3,7 @@
 <template>
   <main>
     <img
-      src="src/assets/fondo-disney.PNG"
+      src="src/assets/fondo-disney-recor.PNG"
       alt="Banner del centenario de Disney"
     />
     <div>
