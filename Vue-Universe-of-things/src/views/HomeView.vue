@@ -1,4 +1,3 @@
-
 <script setup></script>
 <template>
   <main>
@@ -14,38 +13,39 @@
         elige tus favoritos
       </h2>
       <br />
-      <input type="button" value="VER PERSONAJES" />
+      <RouterLink to="/characters" class="character_button"
+        >VER PERSONAJES</RouterLink
+      >
     </div>
-
   </main>
-
 </template>
 
 <style lang="scss" scoped>
-
 @import "../../public/sass/styles.scss";
 
 main {
   background-color: $background-color;
   font-family: $font-family;
   color: white;
-    img {
-      width: 100%;
-      
+  img {
+    width: 100%;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .character_button {
+      text-decoration: none;
+      border: 2px solid #ffffff;
+      background: none;
+      border-radius: 35px;
+      color: #ffffff;
+      padding: 2% 6% 2% 6%;
+      font-size: 1.25em;
+      margin-top: 2%;
+      margin-bottom: 6%;
     }
-    div {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-        input {
-          border: 2px solid #FFFFFF;
-          background: none;
-          border-radius: 35px;
-          color: #FFFFFF;
-          padding: 2% 6% 2% 6%;
-          font-size: 1.25em;
-        }
-    }
+  }
 }
 </style>
