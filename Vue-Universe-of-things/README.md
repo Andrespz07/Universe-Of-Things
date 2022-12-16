@@ -2,8 +2,8 @@ Proyecto Universe of things
 
 Equipo 2: Ramiro, Andrés, Caren, Rosana, Omar, Ali
 
-Product Onwer: Caren
-Scrum Mastes: Rosana
+Product Owner: Caren
+Scrum Master: Rosana
 
 
 CONTEXTO DEL PROYECTO
