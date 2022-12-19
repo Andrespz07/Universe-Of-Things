@@ -16,17 +16,20 @@ footer {
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   p {
+    margin-left: 1%;
     font-size: 2em;
   }
   ul {
     display: flex;
+    width: 20%;
     li {
       list-style: none;
 
       img {
         background-color: white;
-        width: 10%;
+        width: 30%;
       }
     }
   }
