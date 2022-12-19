@@ -7,11 +7,13 @@
   <div class="container">
    <img src="../assets/Happy Blanca Nieves.PNG" alt="Happy Blanca Nieves">
    <p>Happy</p>
-   <button><img id="favoritos" src="../assets/pngwing.com.png" alt="favourite button"></button>
+   <button><img id="papelera" src="../assets/pngwing.com.png" alt="favourite button"></button>
    
 
   </div>
     
+  
+
 </template>
 
 <style lang="scss" scoped>
@@ -50,7 +52,8 @@
     display: flex;
     justify-content: center;
   
-          
+      
+    
     }
   }
 }
