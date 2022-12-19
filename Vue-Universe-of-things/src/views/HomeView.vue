@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import Footer from "../components/Footer.vue";
+</script>
 <template>
   <main>
     <img
@@ -18,6 +20,7 @@
       >
     </div>
   </main>
+  <Footer />
 </template>
 
 <style lang="scss" scoped>
