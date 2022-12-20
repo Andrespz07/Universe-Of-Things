@@ -1,16 +1,9 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
-<style></style>
 <script setup>
 import { useCharactersStore } from "../stores/charactersStore";
 import { onBeforeMount } from "vue";
 import CardCharactersVue from "../components/CardCharacters.vue";
-import HeaderViewVue from "../components/Header.vue";
+import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import CardCharacters from "../components/CardCharacters.vue";
 
 const store = useCharactersStore();
 
@@ -20,6 +13,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
+  <Header></Header>
   <div class="content">
     <div
       class="content__characters"
@@ -33,6 +27,28 @@ onBeforeMount(async () => {
       />
     </div>
   </div>
-  <Footer> </Footer>
+  <Footer></Footer>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3%;
+  .content__characters {
+    margin-top: 3%;
+    padding: 1%;
+  }
+  img {
+  }
+  p {
+    font-size: 0.5em;
+  }
+  button {
+  }
+  #favoritos {
+  }
+}
+</style>

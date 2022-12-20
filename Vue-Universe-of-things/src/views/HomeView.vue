@@ -1,11 +1,9 @@
 <script setup>
-import HeaderViewVue from "../components/Header.vue";
+import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import CardCharacters from '../components/CardCharacters.vue';
-
 </script>
 <template>
-  <HeaderViewVue />
+  <Header></Header>
   <main>
     <img
       src="src/assets/fondo-disney-recor.PNG"
@@ -23,15 +21,12 @@ import CardCharacters from '../components/CardCharacters.vue';
         >VER PERSONAJES</RouterLink
       >
     </div>
-    <CardCharacters/>
   </main>
-  <Footer>
-
-  </Footer>
+  <Footer></Footer>
 </template>
 
 <style lang="scss" scoped>
-@import "../../public/sass/styles.scss";
+@import "../sass/styles.scss";
 
 main {
   background-color: $background-color;

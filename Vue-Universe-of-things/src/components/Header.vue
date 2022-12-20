@@ -4,7 +4,6 @@ import { RouterLink } from "vue-router";
 
 <template>
   <header>
-    <!-- <img src="../assets/logo-disney.png" /> -->
     <nav>
       <img id="img" src="../assets/logo-disney.png" />
       <ul>
@@ -23,16 +22,17 @@ import { RouterLink } from "vue-router";
 </template>
 
 <style lang="scss" scoped>
-@import "../../public/sass/styles.scss";
+@import "../sass/styles.scss";
 header {
   font-family: $font-family;
   width: 100%;
   background-color: white;
+  margin-top: 1%;
+  margin-bottom: 1%;
 
   nav {
     display: flex;
     width: 60%;
-    // margin: auto;
     box-sizing: border-box;
 
     #img {
@@ -51,19 +51,16 @@ header {
     }
 
     #home {
-      // border: 1px solid black;
       padding: 0.5em 1.5em;
       font-size: 2em;
     }
 
     #characters {
-      // border: 1px solid black;
       padding: 0.5em 1.5em;
       font-size: 2em;
     }
 
     #favourites {
-      // border: 1px solid black;
       padding: 0.5em 1.5em;
       font-size: 2em;
     }

@@ -10,9 +10,10 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../../public/sass/styles.scss";
+@import "../sass/styles.scss";
 footer {
   width: 100%;
+  height: 80px;
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: space-between;
