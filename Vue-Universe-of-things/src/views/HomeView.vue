@@ -1,6 +1,8 @@
 <script setup>
-import HeaderViewVue from "../components/HeaderView.vue";
+import HeaderViewVue from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import CardCharacters from '../components/CardCharacters.vue';
+
 </script>
 <template>
   <HeaderViewVue />
@@ -21,9 +23,10 @@ import Footer from "../components/Footer.vue";
         >VER PERSONAJES</RouterLink
       >
     </div>
+    <CardCharacters/>
   </main>
   <Footer>
-    
+
   </Footer>
 </template>
 
