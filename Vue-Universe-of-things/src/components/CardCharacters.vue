@@ -36,7 +36,6 @@ defineProps({
   width: 120px;
   height: 160px;
   border-radius: 5%;
-
   img {
     width: 120px;
     height: 90px;
@@ -49,15 +48,14 @@ defineProps({
   }
   button {
     border: none;
-    background-color: none;
+    background-color: $background-color;
     border-radius: 80%;
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 6px;
-    background-color: red;
+    margin-top: 10px;
 
     #favoritos {
       border: none;
@@ -70,4 +68,5 @@ defineProps({
     }
   }
 }
+
 </style>
