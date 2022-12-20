@@ -3,60 +3,62 @@
 </script>
 
 <template>
-
   <div class="container">
-   <img src="../assets/Happy Blanca Nieves.PNG" alt="Happy Blanca Nieves">
-   <p>Happy</p>
-   <!-- <button><img id="papelera" src="" alt="favourite button"></button>
-    -->
-    <i class="bi bi-trash3-fill"></i>
-  <img src="../assets/img/trash3-fill.svg">
+    <img src="../assets/img/Happy Blanca Nieves.PNG" :alt="name" />
+    <p>happy</p>
+    <button>
+      <img
+        id="favoritos"
+        src="../assets/img/pngwing.com.png"
+        alt="favourite button"
+      />
+    </button>
   </div>
-    
-  
+
+
 
 </template>
 
 <style lang="scss" scoped>
 @import "../../public/sass/styles.scss";
-.container{
+.container {
   background-color: $background-color;
-  width: 108px;
+  width: 120px;
   height: 160px;
   border-radius: 5%;
+  padding: 0;
 
-  img{
-    width: 108px;
+  img {
+    width: 100%;
     height: 90px;
     border-radius: 5%;
   }
-  p{
+  p {
     font-family: $font-family;
     color: white;
     text-align: center;
   }
-  // button{
-  //   border: none;
-  //   background-color: none;
-  //   border-radius: 50% ;
-  //   width: 20px;
-  //   height:20px;
-  //   display: flex;
-  //   justify-content: center;
+  button {
+    border: none;
+    background-color: none;
+    border-radius: 80%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 6px;
+    background-color: red;
 
-    // #favoritos {
-    // border: none;
-    // background-color: none;
-    // border-radius: 50% ;
-    // width: 20px;
-    // height:20px;
-    // display: flex;
-    // justify-content: center;
-  
-      
-    
+    #favoritos {
+      border: none;
+      background-color: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
     }
-//   }
-// }
-
+  }
+}
 </style>

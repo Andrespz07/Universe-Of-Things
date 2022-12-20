@@ -1,10 +1,11 @@
 <script setup>
-import CardCharacters from '../components/CardCharacters.vue';
+
+import StarComponent from '../components/StarComponent.vue';
 
 </script>
 
 <template>
   <main>
-    <CardCharacters/>
+    <StarComponent/>
   </main>
 </template>
