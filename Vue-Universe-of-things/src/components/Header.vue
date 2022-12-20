@@ -27,6 +27,8 @@ header {
   font-family: $font-family;
   width: 100%;
   background-color: white;
+  margin-top: 1%;
+  margin-bottom: 1%;
 
   nav {
     display: flex;
