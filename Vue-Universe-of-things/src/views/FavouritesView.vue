@@ -1,3 +1,3 @@
 <template>
-    <p>juan</p>
+  <p>juan</p>
 </template>

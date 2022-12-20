@@ -30,7 +30,7 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-@import "../../public/sass/styles.scss";
+@import "../sass/styles.scss";
 .container {
   background-color: $background-color;
   width: 120px;

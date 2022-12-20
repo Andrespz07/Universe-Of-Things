@@ -1,13 +1,9 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
-<style></style>
 <script setup>
 import { useCharactersStore } from "../stores/charactersStore";
 import { onBeforeMount } from "vue";
 import CardCharactersVue from "../components/CardCharacters.vue";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 
 const store = useCharactersStore();
 
@@ -17,6 +13,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
+  <Header></Header>
   <div class="content">
     <div
       class="content__characters"
@@ -30,5 +27,6 @@ onBeforeMount(async () => {
       />
     </div>
   </div>
+  <Footer></Footer>
 </template>
 <style lang="scss" scoped></style>
