@@ -1,5 +1,8 @@
-<script setup></script>
+<script setup>
+import HeaderViewVue from "../components/HeaderView.vue";
+</script>
 <template>
+  <HeaderViewVue />
   <main>
     <img
       src="src/assets/fondo-disney-recor.PNG"
