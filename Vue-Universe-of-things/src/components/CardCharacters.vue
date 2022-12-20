@@ -33,12 +33,12 @@ defineProps({
 @import "../sass/styles.scss";
 .container {
   background-color: $background-color;
-  width: 120px;
-  height: 160px;
+  width: 130px;
+  height: 185px;
   border-radius: 5%;
 
   img {
-    width: 120px;
+    width: 130px;
     height: 90px;
     border-radius: 5%;
   }
@@ -56,8 +56,9 @@ defineProps({
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 6px;
+    margin-top: 20px;
     background-color: red;
+    
 
     #favoritos {
       border: none;
