@@ -48,18 +48,17 @@
 
   div {
     display: flex;
-    
+
     button {
       border: none;
       background-color: $background-color;
       border-radius: 50%;
-      width: 20px;
-      height: 20px;
       margin: auto;
       display: flex;
       justify-content: right;
 
-      #trash, #pencil {
+      #trash,
+      > #pencil {
         border: none;
         background-color: $background-color;
         border-radius: 50%;
