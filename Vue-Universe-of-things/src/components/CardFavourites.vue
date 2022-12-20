@@ -8,7 +8,7 @@
     />
     <p>Happy</p>
 
-    <div>
+    <div id="div-button">
       <button aria-label="delete">
         <img
           id="trash"
@@ -46,8 +46,9 @@
     text-align: center;
   }
 
-  div {
+  #div-button {
     display: flex;
+    ;
     
     button {
       border: none;
@@ -57,7 +58,8 @@
       height: 20px;
       margin: auto;
       display: flex;
-      justify-content: right;
+      // justify-content: right;
+      justify-content: space-between;
 
       #trash, #pencil {
         border: none;

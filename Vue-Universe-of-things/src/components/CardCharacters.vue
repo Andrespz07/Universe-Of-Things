@@ -35,8 +35,8 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
 
     #favoritos {
       border: none;
@@ -44,8 +44,8 @@
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      // display: flex;
-      // justify-content: center;
+      display: flex;
+      justify-content: center;
     }
   }
 }
