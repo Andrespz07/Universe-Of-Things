@@ -1,10 +1,10 @@
 <script setup>
-import CardCharacters from '../components/CardCharacters.vue';
+import CardFavourites from '../components/CardFavourites.vue';
 
 </script>
 
 <template>
   <main>
-    <CardCharacters/>
+    <CardFavourites/>
   </main>
 </template>
