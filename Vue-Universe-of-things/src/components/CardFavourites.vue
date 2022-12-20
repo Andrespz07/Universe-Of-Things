@@ -59,7 +59,7 @@
       display: flex;
       justify-content: right;
 
-      #trash {
+      #trash, #pencil {
         border: none;
         background-color: $background-color;
         border-radius: 50%;
