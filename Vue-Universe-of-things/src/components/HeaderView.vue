@@ -9,7 +9,7 @@ import { RouterLink } from "vue-router";
       <img id="img" src="../assets/logo-disney.png" />
       <ul>
         <li id="home">
-          <RouterLink to="home" class="link">Home</RouterLink>
+          <RouterLink to="/" class="link">Home</RouterLink>
         </li>
         <li id="characters">
           <RouterLink to="characters" class="link">Characters</RouterLink>
