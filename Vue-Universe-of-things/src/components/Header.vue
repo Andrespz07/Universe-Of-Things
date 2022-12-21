@@ -4,71 +4,71 @@ import { RouterLink } from "vue-router";
 
 <template>
   <header>
-    <nav>
+    <div>
       <img id="img" src="../../src/assets/img/logo-disney.png" />
-      <ul>
-        <li id="home">
-          <RouterLink to="/" class="link">Home</RouterLink>
-        </li>
-        <li id="characters">
-          <RouterLink to="characters" class="link">Characters</RouterLink>
-        </li>
-        <li id="favourites">
-          <RouterLink to="favourites" class="link">Favourites</RouterLink>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li id="home">
+            <RouterLink to="/" class="link">Home</RouterLink>
+          </li>
+          <li id="characters">
+            <RouterLink to="characters" class="link">Characters</RouterLink>
+          </li>
+          <li id="favourites">
+            <RouterLink to="favourites" class="link">Favourites</RouterLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
 @import "../sass/styles.scss";
 header {
-  font-family: $font-family;
-  width: 100%;
-  background-color: white;
+  // font-family: $font-family;
+  // width: 100%;
+  background-color: rgb(193, 20, 20);
   margin-top: 1%;
   margin-bottom: 1%;
 
-  nav {
+  div {
     display: flex;
-    width: 60%;
-    box-sizing: border-box;
 
     #img {
       display: flex;
       justify-content: flex-start;
-      margin-left: 5%;
+      width: 25vw;
+      margin-left: 3%;
     }
-
-    ul {
-      list-style: none;
+    nav {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      width: 60%;
-      margin-left: 25%;
-    }
+      // width: 60%;
+      box-sizing: border-box;
 
-    #home {
-      padding: 0.5em 1.5em;
-      font-size: 2em;
-    }
+      ul {
+        font-family: $font-family;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // width: 60%;
+        margin-left: 10%;
+      }
 
-    #characters {
-      padding: 0.5em 1.5em;
-      font-size: 2em;
-    }
+      #home,
+      #characters,
+      #favourites {
+        margin: 5vw;
+        font-size: 2em;
+      }
 
-    #favourites {
-      padding: 0.5em 1.5em;
-      font-size: 2em;
-    }
-
-    .link {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
+      .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
     }
   }
 }
