@@ -1,32 +1,43 @@
 <script setup>
-import { useCharactersStore } from "../stores/charactersStore";
-import { onBeforeMount } from "vue";
-// import CardFavouritesVue from "../components/CardFavourites.vue";
+import CardCharacters from "../components/CardCharacters.vue";
+import { useCharactersFavoriteStore } from "../stores/favouritesCharacters";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-
-const store = useCharactersStore();
-
-onBeforeMount(async () => {
-  await store.fetchCharacters();
+import CardFavourites from "../components/CardFavourites.vue";
+const favoriteStore = useCharactersFavoriteStore();
+defineProps({
+  id: {
+    type: Number,
+    default: null,
+  },
+  imageUrl: {
+    type: String,
+    default: null,
+  },
+  name: {
+    type: String,
+    default: null,
+  },
 });
 </script>
-
 <template>
   <Header></Header>
-  <div class="content">
-    <div
-      class="content__characters"
-      v-for="character in store.characters"
-      :key="character"
-    >
-      <CardCharactersVue
-        :id="character.id"
-        :imageUrl="character.imageUrl"
-        :name="character.name"
-      />
+  <main>
+
+    <div class="content">
+      <div
+        class="content__characters"
+        v-for="character in favoriteStore.FavoritesCharacters"
+        :key="character"
+      >
+        <CardFavourites
+          :id="character.id"
+          :imageUrl="character.imageUrl"
+          :name="character.name"
+        />
+      </div>
     </div>
-  </div>
+  </main>
   <Footer></Footer>
 </template>
 <style lang="scss" scoped>
@@ -37,23 +48,12 @@ onBeforeMount(async () => {
   justify-content: space-evenly;
   align-items: center;
   margin: 3%;
-
   .content__characters {
     margin-top: 3%;
     padding: 1%;
   }
-
-  img {
-  }
-
   p {
     font-size: 0.5em;
-  }
-
-  button {
-  }
-
-  #favoritos {
   }
 }
 </style>

@@ -2,9 +2,18 @@
   <footer>
     <p>©Copyright 2022</p>
     <ul>
-      <li><img src="../assets/instagram.png" alt="Instagram Logo" /></li>
-      <li><img src="../assets/signo-de-twitter.png" alt="Twitter Logo" /></li>
-      <li><img src="../assets/facebook.png" alt="Facebook Logo" /></li>
+      <li>
+        <img src="../../src/assets/img/instagram.png" alt="Instagram Logo" />
+      </li>
+      <li>
+        <img
+          src="../../src/assets/img/signo-de-twitter.png"
+          alt="Twitter Logo"
+        />
+      </li>
+      <li>
+        <img src="../../src/assets/img/facebook.png" alt="Facebook Logo" />
+      </li>
     </ul>
   </footer>
 </template>
@@ -14,7 +23,7 @@
 footer {
   width: 100%;
   height: 80px;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-family;
   display: flex;
   justify-content: space-between;
   align-items: center;

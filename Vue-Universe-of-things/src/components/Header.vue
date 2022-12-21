@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router";
 <template>
   <header>
     <nav>
-      <img id="img" src="../assets/logo-disney.png" />
+      <img id="img" src="../../src/assets/img/logo-disney.png" />
       <ul>
         <li id="home">
           <RouterLink to="/" class="link">Home</RouterLink>
