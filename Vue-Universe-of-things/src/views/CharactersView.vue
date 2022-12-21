@@ -1,9 +1,9 @@
 <script setup>
 import { useCharactersStore } from "../stores/charactersStore";
 import { onBeforeMount } from "vue";
-import CardFavourites from "../components/CardFavourites.vue";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import CardCharacters from "../components/CardCharacters.vue";
 
 const store = useCharactersStore();
 
@@ -20,7 +20,7 @@ onBeforeMount(async () => {
       v-for="character in store.characters"
       :key="character"
     >
-      <CardFavourites
+      <CardCharacters
         :id="character.id"
         :imageUrl="character.imageUrl"
         :name="character.name"
