@@ -1,7 +1,7 @@
 <script setup>
 import { useCharactersStore } from "../stores/charactersStore";
 import { onBeforeMount } from "vue";
-import CardCharactersVue from "../components/CardCharacters.vue";
+import CardFavourites from "../components/CardFavourites.vue";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 
@@ -20,7 +20,7 @@ onBeforeMount(async () => {
       v-for="character in store.characters"
       :key="character"
     >
-      <CardCharactersVue
+      <CardFavourites
         :id="character.id"
         :imageUrl="character.imageUrl"
         :name="character.name"
@@ -30,32 +30,19 @@ onBeforeMount(async () => {
   <Footer></Footer>
 </template>
 <style lang="scss" scoped>
-.content{
+.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
   margin: 3%;
-    .content__characters{
-      margin-top: 3%;
-      padding: 1%;
-     
-
-    }
-    img{
-
+  .content__characters {
+    margin-top: 3%;
+    padding: 1%;
   }
-    p{
-      font-size:0.5em;
-    }
-    button{
-
-    }
-    #favoritos{
-
-    }
+  p {
+    font-size: 0.5em;
+  }
 }
-
-
 </style>
