@@ -29,7 +29,7 @@ const sendCharcatersFavorites = () => {
     <button @click="sendCharcatersFavorites()">
       <img
         id="favoritos"
-        src="../assets/pngwing.com.png"
+        src="../../src/assets/img/pngwing.com.png"
         alt="favourite button"
       />
     </button>
@@ -40,31 +40,32 @@ const sendCharcatersFavorites = () => {
 @import "../sass/styles.scss";
 .container {
   background-color: $background-color;
+  padding: 0;
   width: 130px;
   height: 185px;
   border-radius: 5%;
 
   img {
-    width: 130px;
+    width: 100%;
     height: 90px;
     border-radius: 5%;
   }
   p {
     font-family: $font-family;
-    color: white;
+    color: $colortext;
     text-align: center;
   }
+  
   button {
     border: none;
-    background-color: none;
+    background-color: $background-color;
     border-radius: 80%;
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 20px;
-    background-color: red;
+    margin-top: 10px;
 
     #favoritos {
       border: none;
@@ -78,3 +79,4 @@ const sendCharcatersFavorites = () => {
   }
 }
 </style>
+

@@ -6,7 +6,7 @@ import Footer from "../components/Footer.vue";
   <Header></Header>
   <main>
     <img
-      src="src/assets/fondo-disney-recor.PNG"
+      src="../assets/img/fondo-disney-recor.PNG"
       alt="Banner del centenario de Disney"
     />
     <div>
@@ -31,7 +31,7 @@ import Footer from "../components/Footer.vue";
 main {
   background-color: $background-color;
   font-family: $font-family;
-  color: white;
+  color: $colortext;
   img {
     width: 100%;
   }
@@ -42,10 +42,10 @@ main {
     align-items: center;
     .character_button {
       text-decoration: none;
-      border: 2px solid #ffffff;
+      border: 2px solid $colortext;
       background: none;
       border-radius: 35px;
-      color: #ffffff;
+      color: $colortext;
       padding: 2% 6% 2% 6%;
       font-size: 1.25em;
       margin-top: 2%;
