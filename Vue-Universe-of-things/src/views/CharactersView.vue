@@ -30,32 +30,19 @@ onBeforeMount(async () => {
   <Footer></Footer>
 </template>
 <style lang="scss" scoped>
-.content{
+.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
   margin: 3%;
-    .content__characters{
-      margin-top: 3%;
-      padding: 1%;
-     
-
-    }
-    img{
-
+  .content__characters {
+    margin-top: 3%;
+    padding: 1%;
   }
-    p{
-      font-size:0.5em;
-    }
-    button{
-
-    }
-    #favoritos{
-
-    }
+  p {
+    font-size: 0.5em;
+  }
 }
-
-
 </style>

@@ -1,5 +1,7 @@
 <script setup>
-defineProps({
+import { useCharactersFavoriteStore } from "../stores/favouritesCharacters";
+
+const props = defineProps({
   id: {
     type: Number,
     default: null,
@@ -13,13 +15,18 @@ defineProps({
     default: null,
   },
 });
+const favoriteStore = useCharactersFavoriteStore();
+const sendCharcatersFavorites = () => {
+  favoriteStore.showCharacters(props.name);
+  alert(`${props.name} se ha añadido a favoritos`);
+};
 </script>
 
 <template>
   <div class="container">
     <img :src="imageUrl" :alt="name" />
     <p>{{ name }}</p>
-    <button>
+    <button @click="sendCharcatersFavorites()">
       <img
         id="favoritos"
         src="../assets/pngwing.com.png"
@@ -58,7 +65,6 @@ defineProps({
     margin: auto;
     margin-top: 20px;
     background-color: red;
-    
 
     #favoritos {
       border: none;
