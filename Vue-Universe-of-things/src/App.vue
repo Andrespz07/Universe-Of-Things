@@ -4,6 +4,7 @@ import { RouterView } from "vue-router";
 <template>
   <RouterView />
 </template>
-<style lang="scss">
-@import "./sass/styles.scss";
+
+<style>
+@import "../src/sass/styles.scss";
 </style>
