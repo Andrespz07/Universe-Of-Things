@@ -31,14 +31,17 @@
 @import "../../public/sass/styles.scss";
 .container {
   background-color: $background-color;
-  width: 120px;
-  height: 160px;
+  padding: 0;
+  width: 130px;
+  height: 185px;
   border-radius: 5%;
 
+
   img {
-    width: 100%;
+    width: 130px;
     height: 90px;
     border-radius: 5%;
+   
   }
   p {
     font-family: $font-family;
@@ -47,6 +50,7 @@
   }
 
   div {
+    margin-top: 15px;
     display: flex;
 
     button {
