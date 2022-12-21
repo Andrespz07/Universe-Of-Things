@@ -7,5 +7,5 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style>
-@import "../public/sass/styles.scss"
+@import "../src/sass/styles.scss"
 </style>
