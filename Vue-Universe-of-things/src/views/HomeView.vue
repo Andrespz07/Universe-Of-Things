@@ -13,12 +13,12 @@ import Footer from "../components/Footer.vue";
     />
     <div>
       <h1>100 AÑOS DE EMOCIÓN</h1>
-      <br />
-      <h2>
+      
+      <h3>
         Descubre todos nuestros personajes a lo largo de nuestra historia y
         elige tus favoritos
-      </h2>
-      <br />
+      </h3>
+      
       <RouterLink to="/characters" class="character_button"
         >VER PERSONAJES</RouterLink
       >
@@ -36,12 +36,17 @@ main {
   color: $colortext;
   img {
     width: 100%;
+    display: flex;
   }
   div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+      h1{
+        margin-bottom: 2%;
+      }
     .character_button {
       text-decoration: none;
       border: 2px solid $colortext;

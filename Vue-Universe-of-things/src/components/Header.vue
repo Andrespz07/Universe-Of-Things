@@ -5,17 +5,17 @@ import { RouterLink } from "vue-router";
 <template>
   <header>
     <div>
-      <img id="img" src="../../src/assets/img/logo-disney.png" />
+      <img id="logo" src="../../src/assets/img/logo-disney.png" />
       <nav>
         <ul>
           <li id="home">
-            <RouterLink to="/" class="link">Home</RouterLink>
+            <RouterLink to="/" class="link">HOME</RouterLink>
           </li>
           <li id="characters">
-            <RouterLink to="characters" class="link">Characters</RouterLink>
+            <RouterLink to="characters" class="link">CHARACTERS</RouterLink>
           </li>
           <li id="favourites">
-            <RouterLink to="favourites" class="link">Favourites</RouterLink>
+            <RouterLink to="favourites" class="link">FAVOURITES</RouterLink>
           </li>
         </ul>
       </nav>
@@ -28,24 +28,24 @@ import { RouterLink } from "vue-router";
 header {
   // font-family: $font-family;
   // width: 100%;
-  background-color: rgb(193, 20, 20);
+  background-color: rgb(255, 255, 255);
   margin-top: 1%;
   margin-bottom: 1%;
 
   div {
     display: flex;
 
-    #img {
+    img {
       display: flex;
       justify-content: flex-start;
-      width: 25vw;
-      margin-left: 3%;
+      width: 18vw;
+      margin: auto;
     }
     nav {
       display: flex;
       justify-content: space-between;
-      // width: 60%;
       box-sizing: border-box;
+      text-align: center;
 
       ul {
         font-family: $font-family;
@@ -53,8 +53,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // width: 60%;
-        margin-left: 10%;
+        font-size: 1vw;
+        
       }
 
       #home,

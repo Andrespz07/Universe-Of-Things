@@ -28,7 +28,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   p {
-    margin-left: 1%;
+    margin-left: 3%;
     font-size: 2em;
   }
   ul {
