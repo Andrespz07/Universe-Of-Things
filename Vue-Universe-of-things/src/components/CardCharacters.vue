@@ -55,7 +55,7 @@ const sendCharcatersFavorites = () => {
     color: $colortext;
     text-align: center;
   }
-  
+
   button {
     border: none;
     background-color: $background-color;
@@ -79,4 +79,3 @@ const sendCharcatersFavorites = () => {
   }
 }
 </style>
-

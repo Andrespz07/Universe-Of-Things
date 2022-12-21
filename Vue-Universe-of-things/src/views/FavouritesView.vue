@@ -16,7 +16,7 @@ const favoriteStore = useCharactersFavoriteStore();
         :key="character"
       >
         <CardFavourites
-          :id="character.id"
+          :id="character._id"
           :imageUrl="character.imageUrl"
           :name="character.name"
         />

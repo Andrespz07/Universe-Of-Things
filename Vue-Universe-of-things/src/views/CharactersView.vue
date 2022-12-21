@@ -21,7 +21,7 @@ onBeforeMount(async () => {
       :key="character"
     >
       <CardCharacters
-        :id="character.id"
+        :id="character._id"
         :imageUrl="character.imageUrl"
         :name="character.name"
       />

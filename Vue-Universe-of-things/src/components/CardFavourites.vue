@@ -1,6 +1,7 @@
 <script setup>
 import StarComponent from "./StarComponent.vue";
-defineProps({
+import { useCharactersFavoriteStore } from "../stores/favouritesCharacters";
+const props = defineProps({
   id: {
     type: Number,
     default: null,
@@ -14,6 +15,11 @@ defineProps({
     default: null,
   },
 });
+console.log(props.id);
+const favoriteStore = useCharactersFavoriteStore();
+const deleteFavorites = (idchar) => {
+  favoriteStore.deleteCharacter(idchar);
+};
 </script>
 
 <template>
@@ -27,6 +33,7 @@ defineProps({
             id="trash"
             src="../assets/img/trash3-fill.svg"
             alt="trash button"
+            @click="deleteFavorites(props.name)"
           />
         </button>
         <button aria-label="edit">
