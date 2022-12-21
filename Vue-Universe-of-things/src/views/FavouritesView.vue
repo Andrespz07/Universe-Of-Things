@@ -1,29 +1,14 @@
 <script setup>
-import CardCharacters from "../components/CardCharacters.vue";
 import { useCharactersFavoriteStore } from "../stores/favouritesCharacters";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import CardFavourites from "../components/CardFavourites.vue";
+
 const favoriteStore = useCharactersFavoriteStore();
-defineProps({
-  id: {
-    type: Number,
-    default: null,
-  },
-  imageUrl: {
-    type: String,
-    default: null,
-  },
-  name: {
-    type: String,
-    default: null,
-  },
-});
 </script>
 <template>
   <Header></Header>
   <main>
-
     <div class="content">
       <div
         class="content__characters"

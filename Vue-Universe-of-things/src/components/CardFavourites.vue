@@ -1,16 +1,26 @@
 <script setup>
 import StarComponent from "./StarComponent.vue";
+defineProps({
+  id: {
+    type: Number,
+    default: null,
+  },
+  imageUrl: {
+    type: String,
+    default: null,
+  },
+  name: {
+    type: String,
+    default: null,
+  },
+});
 </script>
 
 <template>
   <div class="container">
     <div class="card">
-      <img
-        src="../assets/img/Happy Blanca Nieves.PNG"
-        alt="Happy Blanca Nieves"
-      />
-      <p>Happy</p>
-
+      <img :src="imageUrl" :alt="name" />
+      <p>{{ name }}</p>
       <div>
         <button aria-label="delete">
           <img
@@ -71,7 +81,8 @@ import StarComponent from "./StarComponent.vue";
         display: flex;
         justify-content: right;
 
-        #trash, #pencil {
+        #trash,
+        #pencil {
           border: none;
           background-color: $background-color;
           border-radius: 50%;

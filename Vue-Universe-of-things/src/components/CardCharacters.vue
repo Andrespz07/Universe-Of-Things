@@ -17,7 +17,7 @@ const props = defineProps({
 });
 const favoriteStore = useCharactersFavoriteStore();
 const sendCharcatersFavorites = () => {
-  favoriteStore.showCharacters(props.name);
+  favoriteStore.showCharacters(props);
   alert(`${props.name} se ha añadido a favoritos`);
 };
 </script>

@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 export const useCharactersFavoriteStore = defineStore({
-  id: "favCharacters",
+  id: "FavoritesCharacters",
   state: () => ({
     FavoritesCharacters: ref([]),
   }),
